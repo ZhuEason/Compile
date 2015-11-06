@@ -78,7 +78,7 @@ public class BinaryTree extends JFrame{
 	    Node newNode = queue.poll();
 	    Node nextNode;
 	    
-	    for (int i = 0; i < 2; i++) {
+	    
 		if (newNode.getLeft() != null) {
 		    	nextNode = newNode.getLeft();
 		    	nextNode.setLever(newNode.getLever()+1);
@@ -94,7 +94,7 @@ public class BinaryTree extends JFrame{
 			nextNode.setY(newNode.getY()+max_move);
 			queue.offer(newNode.getRight());
 		}
-	    }
+	    
 	    
 	}
     }
